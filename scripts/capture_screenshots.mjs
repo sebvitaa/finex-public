@@ -1,9 +1,10 @@
 import { chromium } from "playwright";
+import fs from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const OUT = path.resolve(__dirname, "../assets/screenshots");
+const OUT = path.resolve(__dirname, "../docs/screenshots");
 const BASE = "http://127.0.0.1:5173";
 
 const navTargets = [
@@ -17,6 +18,7 @@ const navTargets = [
 ];
 
 async function main() {
+  fs.mkdirSync(OUT, { recursive: true });
   const browser = await chromium.launch();
   const context = await browser.newContext({
     viewport: { width: 1440, height: 900 },
@@ -37,7 +39,7 @@ async function main() {
   console.log("captured landing");
 
   // Enter demo
-  await page.getByRole("button", { name: /Explorar demo interactiva/i }).first().click();
+  await page.getByRole("button", { name: /Ver demo/i }).first().click();
   await page.waitForTimeout(2000);
 
   let index = 1;

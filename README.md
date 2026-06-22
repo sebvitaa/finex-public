@@ -6,6 +6,21 @@ El foco inicial es simple: datos locales, dashboard claro, privacidad por defect
 
 > Aviso: todos los datos mostrados en esta copia son ficticios y corresponden al modo demo.
 
+## Capturas
+
+Las capturas públicas viven en `docs/screenshots/` y se generan sobre la sesión demo.
+
+| Pantalla | Vista |
+|---|---|
+| Portada | [00-landing.png](docs/screenshots/00-landing.png) |
+| Dashboard | [01-dashboard.png](docs/screenshots/01-dashboard.png) |
+| Movimientos | [02-movements.png](docs/screenshots/02-movements.png) |
+| Obligaciones | [03-obligations.png](docs/screenshots/03-obligations.png) |
+| Importar | [04-import.png](docs/screenshots/04-import.png) |
+| Correos | [05-mailbox.png](docs/screenshots/05-mailbox.png) |
+| Cuentas | [06-accounts.png](docs/screenshots/06-accounts.png) |
+| Ajustes | [07-settings.png](docs/screenshots/07-settings.png) |
+
 ## Stack definido
 
 | Capa | Tecnologia |

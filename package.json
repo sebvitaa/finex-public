@@ -20,5 +20,8 @@
     "lint": ".venv/bin/python scripts/phase0_check.py && pnpm --filter frontend lint",
     "build": "pnpm --filter frontend build",
     "backend:init-db": ".venv/bin/python scripts/init_db.py"
+  },
+  "devDependencies": {
+    "playwright": "^1.61.0"
   }
 }

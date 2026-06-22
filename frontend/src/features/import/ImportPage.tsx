@@ -251,6 +251,15 @@ function gmailMessageStatusClass(status: string) {
   return "border-border bg-surface2 text-muted";
 }
 
+function redactLocalCredentialsPath(pathValue?: string | null) {
+  if (!pathValue) return "data/local/gmail_credentials.json";
+  const marker = "data/local/";
+  const markerIndex = pathValue.lastIndexOf(marker);
+  if (markerIndex >= 0) return pathValue.slice(markerIndex);
+  const fileName = pathValue.split(/[\\/]/).pop();
+  return fileName ? `data/local/${fileName}` : "data/local/gmail_credentials.json";
+}
+
 type ImportPageMode = "import" | "review";
 
 type ImportPageProps = {
@@ -799,7 +808,7 @@ export function ImportPage({ mode = "import" }: ImportPageProps) {
           </div>
 
           <div className="mt-3 grid gap-2 sm:grid-cols-2">
-            <p className="min-w-0 truncate text-xs text-subtle">Credenciales: {gmailStatus?.credentials_path ?? "data/local/gmail_credentials.json"}</p>
+            <p className="min-w-0 truncate text-xs text-subtle">Credenciales: {redactLocalCredentialsPath(gmailStatus?.credentials_path)}</p>
             <p className="min-w-0 truncate text-xs text-subtle">
               Ultimo sync: {gmailStatus?.last_sync_at ? formatDateLabel(gmailStatus.last_sync_at) : "sin sincronizar"}
             </p>
