@@ -81,7 +81,7 @@ finex/
 
 ## Requisitos locales
 
-- Node.js 20 o superior. La maquina actual usa Node 26 instalado con Homebrew.
+- Node.js 20 o superior.
 - pnpm 9 o superior. Si no esta instalado, se puede habilitar con Corepack cuando este disponible:
 
 ```bash
@@ -89,7 +89,7 @@ corepack enable
 corepack prepare pnpm@11.3.0 --activate
 ```
 
-En esta maquina, `corepack` no esta en PATH. Alternativa local con Homebrew:
+Si `corepack` no esta en PATH, puedes instalar pnpm con Homebrew:
 
 ```bash
 brew install pnpm

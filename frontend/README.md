@@ -47,7 +47,7 @@ La vista `Importar` agrega importacion controlada:
 
 La vista `Importar` ahora conecta Gmail real:
 
-- Muestra estado de credenciales, conexion y ruta local usada.
+- Muestra estado de credenciales, conexion y ruta local usada, sin exponer rutas absolutas en la UI.
 - Abre OAuth con `Conectar Gmail`.
 - Ejecuta `Actualizar Gmail` para traer mensajes recientes desde `INBOX`.
 - Hace una sincronizacion automatica al abrir si Gmail ya esta conectado.

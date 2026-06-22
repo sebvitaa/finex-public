@@ -65,7 +65,7 @@ configuración pública hacia `../finex-public/`.
 
 ```bash
 # Desde la carpeta del proyecto de trabajo:
-cd "/Users/seba/Documents/Visual Studio/Lat Ex/CTAIA/finex"
+cd "<ruta-al-repo>/CTAIA/finex"
 DEST="../finex-public"
 
 # Backend (sin __pycache__)
