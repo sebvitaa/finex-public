@@ -6,6 +6,36 @@ El foco inicial es simple: datos locales, dashboard claro, privacidad por defect
 
 > Aviso: todos los datos mostrados en esta copia son ficticios y corresponden al modo demo.
 
+## Publico
+
+- Repositorio publico: [sebvitaa/finex-public](https://github.com/sebvitaa/finex-public)
+- Capturas de la demo: `docs/screenshots/`
+- Modo recomendado al abrir: `Demo · Presentación`
+
+## Fases
+
+- La funcionalidad principal del producto llega hasta Fase 10.
+- Las secciones F1, F2 y F3 documentan refinamientos posteriores de UX, layout y legibilidad.
+- En esta copia publica me enfoqué en empaquetado, privacidad, landing, capturas y publicación.
+
+## Arranque rapido
+
+```bash
+cp .env.example .env
+python3.11 -m venv .venv
+source .venv/bin/activate
+python -m pip install -e ".[dev]"
+pnpm install
+pnpm backend:dev
+pnpm dev
+```
+
+Si quieres regenerar capturas demo:
+
+```bash
+pnpm exec node scripts/capture_screenshots.mjs
+```
+
 ## Capturas
 
 Las capturas públicas viven en `docs/screenshots/` y se generan sobre la sesión demo.
