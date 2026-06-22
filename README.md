@@ -1,6 +1,6 @@
 # FinEx
 
-FinEx es la base profesional de la idea FinEx: una aplicacion local-first para registrar, importar, clasificar y visualizar gastos personales antes de que llegue la facturacion de fin de mes.
+FinEx ayuda a ordenar las finanzas personales en un solo lugar. Permite registrar gastos e ingresos, importar movimientos desde correos y ver cuánto dinero queda disponible. Es una app local y privada para entender el dinero antes de fin de mes, sin depender de la nube.
 
 El foco inicial es simple: datos locales, dashboard claro, privacidad por defecto y crecimiento por fases. A Fase 10 ya cuenta con registro manual, Gmail real, importacion revisable, obligaciones, cuentas financieras, inversiones separadas de gasto/ingreso, clasificacion por reglas e insights avanzados.
 
