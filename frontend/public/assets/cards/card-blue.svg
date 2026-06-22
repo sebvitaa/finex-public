@@ -1,0 +1,21 @@
+<svg width="640" height="400" viewBox="0 0 640 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="400" rx="42" fill="#172554"/>
+  <rect width="640" height="400" rx="42" fill="url(#paint0_linear)"/>
+  <path d="M-10 292C64 238 146 218 246 250C358 286 431 284 529 214C575 181 613 171 650 176V400H-10V292Z" fill="#60A5FA" fill-opacity="0.24"/>
+  <path d="M411 -10C376 39 366 91 398 148C432 207 513 223 650 176V-10H411Z" fill="#BFDBFE" fill-opacity="0.18"/>
+  <rect x="54" y="70" width="92" height="68" rx="16" fill="#F8D36D"/>
+  <rect x="68" y="86" width="64" height="36" rx="8" stroke="#1E3A8A" stroke-opacity="0.44" stroke-width="4"/>
+  <path d="M102 70V138" stroke="#1E3A8A" stroke-opacity="0.36" stroke-width="4"/>
+  <path d="M54 104H146" stroke="#1E3A8A" stroke-opacity="0.36" stroke-width="4"/>
+  <text x="54" y="246" fill="#EFF6FF" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">FinEx Card</text>
+  <text x="54" y="300" fill="#DBEAFE" font-family="Inter, Arial, sans-serif" font-size="22" letter-spacing="7">LAST4</text>
+  <rect x="466" y="286" width="118" height="42" rx="21" fill="#FFFFFF" fill-opacity="0.16"/>
+  <text x="490" y="315" fill="#EFF6FF" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">CLP/USD</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="35" y1="18" x2="609" y2="374" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3B82F6"/>
+      <stop offset="0.5" stop-color="#1D4ED8"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+</svg>

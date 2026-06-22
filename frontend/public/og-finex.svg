@@ -1,0 +1,60 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">FinEx</title>
+  <desc id="desc">Landing preview for the FinEx public demo</desc>
+  <defs>
+    <linearGradient id="bg" x1="120" y1="30" x2="1080" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#050505" />
+      <stop offset="0.55" stop-color="#101513" />
+      <stop offset="1" stop-color="#08151c" />
+    </linearGradient>
+    <linearGradient id="accent" x1="360" y1="190" x2="820" y2="430" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22C55E" />
+      <stop offset="0.55" stop-color="#38BDF8" />
+      <stop offset="1" stop-color="#A78BFA" />
+    </linearGradient>
+    <filter id="blur" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="45" />
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <circle cx="240" cy="160" r="132" fill="#22C55E" fill-opacity="0.16" filter="url(#blur)" />
+  <circle cx="960" cy="110" r="150" fill="#38BDF8" fill-opacity="0.12" filter="url(#blur)" />
+  <circle cx="970" cy="500" r="180" fill="#A78BFA" fill-opacity="0.1" filter="url(#blur)" />
+  <g opacity="0.28">
+    <path d="M70 110H1130" stroke="#FFFFFF" stroke-opacity="0.12" />
+    <path d="M70 190H1130" stroke="#FFFFFF" stroke-opacity="0.08" />
+    <path d="M70 270H1130" stroke="#FFFFFF" stroke-opacity="0.08" />
+    <path d="M70 350H1130" stroke="#FFFFFF" stroke-opacity="0.08" />
+    <path d="M70 430H1130" stroke="#FFFFFF" stroke-opacity="0.08" />
+    <path d="M70 510H1130" stroke="#FFFFFF" stroke-opacity="0.08" />
+  </g>
+  <g transform="translate(86 78)">
+    <rect x="0" y="0" width="90" height="90" rx="22" fill="#22C55E" fill-opacity="0.14" stroke="#22C55E" stroke-opacity="0.38" />
+    <path d="M28 24L49 45L28 66" stroke="#22C55E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M51 24L72 45L51 66" stroke="#38BDF8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <g transform="translate(190 110)">
+    <text x="0" y="0" fill="#F4F4F5" font-family="Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="76" font-weight="700" letter-spacing="-2">FinEx</text>
+    <text x="2" y="46" fill="#C5C6CA" font-family="Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="26" font-weight="500">
+      Finanzas claras, locales y privadas
+    </text>
+    <text x="2" y="86" fill="#94A3B8" font-family="Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="19">
+      Demo pública con datos ficticios
+    </text>
+  </g>
+  <g transform="translate(736 172)">
+    <rect x="0" y="0" width="340" height="218" rx="24" fill="#0F1115" stroke="#243036" stroke-width="1.5" />
+    <rect x="18" y="18" width="304" height="24" rx="12" fill="#141B1F" />
+    <rect x="18" y="58" width="304" height="44" rx="14" fill="#121A15" stroke="#19311F" />
+    <rect x="18" y="114" width="304" height="72" rx="16" fill="#121820" stroke="#173041" />
+    <rect x="18" y="198" width="118" height="12" rx="6" fill="url(#accent)" />
+    <rect x="146" y="198" width="56" height="12" rx="6" fill="#1F2937" />
+    <rect x="210" y="198" width="112" height="12" rx="6" fill="#1F2937" />
+    <circle cx="52" cy="80" r="9" fill="#22C55E" />
+    <text x="72" y="86" fill="#F4F4F5" font-family="Inter, system-ui, sans-serif" font-size="21" font-weight="600">$2.840.500</text>
+    <text x="28" y="145" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="15">Gasto del mes</text>
+    <text x="250" y="145" fill="#F59E0B" font-family="Inter, system-ui, sans-serif" font-size="21" font-weight="600">$1.284.300</text>
+    <text x="28" y="178" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="15">Balance real</text>
+    <text x="250" y="178" fill="#22C55E" font-family="Inter, system-ui, sans-serif" font-size="21" font-weight="600">+$612.200</text>
+  </g>
+</svg>

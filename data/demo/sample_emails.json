@@ -1,0 +1,22 @@
+[
+  {
+    "id": "lider_sin_detalle",
+    "raw_text": "From: Banco Demo <avisos@banco.demo>\nSubject: Compra aprobada Lider por $42.000\n\nTu compra fue aprobada.\nComercio: Lider\nMonto: $42.000\nTarjeta terminada en 1234.\nNo se incluye detalle de productos."
+  },
+  {
+    "id": "transferencia_clase",
+    "raw_text": "From: Banco Demo <avisos@banco.demo>\nSubject: Transferencia recibida pago clase matematica $25.000\n\nRecibiste una transferencia.\nDe: Camila Alumna\nMonto: $25.000\nMotivo: Pago clase matematica y ayudantia."
+  },
+  {
+    "id": "spotify_suscripcion",
+    "raw_text": "From: Spotify <no-reply@spotify.demo>\nSubject: Pago mensual Spotify $4.550\n\nSuscripcion renovada.\nComercio: Spotify\nTotal: $4.550\nPlan individual."
+  },
+  {
+    "id": "rappi_delivery",
+    "raw_text": "From: Banco Demo <avisos@banco.demo>\nSubject: Compra aprobada Rappi $13.990\n\nTu compra fue aprobada.\nComercio: Rappi\nMonto: $13.990\nDescripcion: delivery almuerzo."
+  },
+  {
+    "id": "traspaso_entre_cuentas",
+    "raw_text": "From: Banco Demo <avisos@banco.demo>\nSubject: Traspaso entre tus cuentas por $90.000\n\nRealizaste un traspaso entre tus cuentas.\nMonto: $90.000\nOrigen: Cuenta corriente.\nDestino: Cuenta de ahorro."
+  }
+]

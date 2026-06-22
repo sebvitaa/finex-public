@@ -1,0 +1,24 @@
+{
+  "name": "finex",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Local-first personal finance dashboard based on the FinEx project plan.",
+  "packageManager": "pnpm@11.3.0",
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9",
+    "python": ">=3.11"
+  },
+  "scripts": {
+    "dev": "pnpm --filter frontend dev --host 127.0.0.1 --port 5173",
+    "frontend:dev": "pnpm --filter frontend dev --host 127.0.0.1 --port 5173",
+    "backend:dev": ".venv/bin/uvicorn backend.app.main:app --host 127.0.0.1 --port 8000",
+    "backend:dev:reload": ".venv/bin/uvicorn backend.app.main:app --reload --host 127.0.0.1 --port 8000",
+    "test": ".venv/bin/python -m pytest && pnpm --filter frontend test --run",
+    "test:backend": ".venv/bin/python -m pytest",
+    "test:frontend": "pnpm --filter frontend test --run",
+    "lint": ".venv/bin/python scripts/phase0_check.py && pnpm --filter frontend lint",
+    "build": "pnpm --filter frontend build",
+    "backend:init-db": ".venv/bin/python scripts/init_db.py"
+  }
+}
