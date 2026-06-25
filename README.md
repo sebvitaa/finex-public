@@ -157,6 +157,68 @@ cp .env.example .env
 
 Para conectar Gmail en Fase 6, descarga el JSON OAuth desde Google Cloud y guardalo como `data/local/gmail_credentials.json`. La guia completa esta en `docs/gmail-setup.md`.
 
+## Despliegue en Vercel + Render
+
+Esta copia publica funciona mejor separando capas:
+
+- Render hospeda el backend FastAPI.
+- Vercel hospeda el frontend Vite.
+- El frontend apunta al backend real con `VITE_FINEX_API_URL`.
+- El backend debe permitir el dominio de Vercel en `FINEX_ALLOWED_ORIGINS`.
+
+### Backend en Render
+
+1. Crea un nuevo Web Service desde este mismo repositorio.
+2. Usa la raiz del repo como directorio de trabajo.
+3. Build command:
+
+```bash
+python -m pip install --upgrade pip && pip install -e ".[dev]"
+```
+
+4. Start command:
+
+```bash
+uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT
+```
+
+5. Health check path: `/health`.
+6. Variables recomendadas:
+
+```bash
+FINEX_ENV=production
+FINEX_ALLOWED_ORIGINS=https://tu-proyecto.vercel.app
+```
+
+Si mantienes SQLite como base de datos por defecto, el demo funciona igual, pero los datos pueden resetearse al reiniciar el servicio. Para datos persistentes conviene migrar a una base gestionada mas adelante.
+
+### Frontend en Vercel
+
+1. Crea un proyecto nuevo desde este repositorio.
+2. Define `frontend/` como root directory.
+3. Build command:
+
+```bash
+pnpm build
+```
+
+4. Output directory: `dist`.
+5. Variable de entorno:
+
+```bash
+VITE_FINEX_API_URL=https://tu-backend.onrender.com
+```
+
+6. Despliega primero Render y luego Vercel, para que la UI apunte a una API ya viva.
+
+### Verificacion
+
+- Abre `https://tu-backend.onrender.com/health`.
+- Luego abre la URL publica de Vercel.
+- Si el dashboard marca backend offline, revisa que `VITE_FINEX_API_URL` apunte a Render y que `FINEX_ALLOWED_ORIGINS` incluya el dominio de Vercel.
+
+Guia ampliada: [docs/deployment.md](docs/deployment.md).
+
 ## Estado de la Fase 0
 
 - Estructura de carpetas creada.
