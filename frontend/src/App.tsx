@@ -20,8 +20,9 @@ const viewTitles: Record<string, { title: string; subtitle: string }> = {
 
 export function App() {
   const [activeView, setActiveView] = useState("dashboard");
-  // The landing is a presentation layer; tests target the app shell directly.
-  const [entered, setEntered] = useState(() => import.meta.env.MODE === "test");
+  // In production we open the app directly so the public QR lands on the dashboard.
+  // The landing remains available as an exit target and in tests/local dev.
+  const [entered, setEntered] = useState(() => import.meta.env.MODE === "test" || import.meta.env.PROD);
   const { setSession } = useSession();
   const current = viewTitles[activeView] ?? viewTitles.dashboard;
 
