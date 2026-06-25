@@ -19,6 +19,10 @@ class Settings(BaseSettings):
         default="http://localhost:5173,http://127.0.0.1:5173",
         alias="FINEX_ALLOWED_ORIGINS",
     )
+    allowed_origin_regex: str = Field(
+        default="",
+        alias="FINEX_ALLOWED_ORIGIN_REGEX",
+    )
     gmail_credentials_path: str = Field(
         default="data/local/gmail_credentials.json",
         alias="GMAIL_CREDENTIALS_PATH",

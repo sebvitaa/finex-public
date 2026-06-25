@@ -23,9 +23,10 @@ Variables de entorno:
 ```bash
 FINEX_ENV=production
 FINEX_ALLOWED_ORIGINS=https://tu-proyecto.vercel.app
+FINEX_ALLOWED_ORIGIN_REGEX=https://.*\.vercel\.app
 ```
 
-Si necesitas mantener datos entre reinicios, mas adelante conviene migrar de SQLite a una base gestionada. Para el demo publico actual, el arranque inicial vuelve a sembrar datos de muestra y el servicio sigue siendo util aunque el disco sea efimero.
+En produccion, si `FINEX_ALLOWED_ORIGIN_REGEX` queda vacio, el backend acepta por defecto dominios `https://*.vercel.app` para simplificar la demo publica. Si necesitas mantener datos entre reinicios, mas adelante conviene migrar de SQLite a una base gestionada. Para el demo publico actual, el arranque inicial vuelve a sembrar datos de muestra y el servicio sigue siendo util aunque el disco sea efimero.
 
 ## Vercel
 

@@ -188,9 +188,10 @@ uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT
 ```bash
 FINEX_ENV=production
 FINEX_ALLOWED_ORIGINS=https://tu-proyecto.vercel.app
+FINEX_ALLOWED_ORIGIN_REGEX=https://.*\.vercel\.app
 ```
 
-Si mantienes SQLite como base de datos por defecto, el demo funciona igual, pero los datos pueden resetearse al reiniciar el servicio. Para datos persistentes conviene migrar a una base gestionada mas adelante.
+En produccion, si `FINEX_ALLOWED_ORIGIN_REGEX` queda vacio, el backend acepta por defecto dominios `https://*.vercel.app` para simplificar la demo publica. Si mantienes SQLite como base de datos por defecto, el demo funciona igual, pero los datos pueden resetearse al reiniciar el servicio. Para datos persistentes conviene migrar a una base gestionada mas adelante.
 
 ### Frontend en Vercel
 
