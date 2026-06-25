@@ -24,7 +24,15 @@ import type {
   TransactionType
 } from "../types";
 
-const API_BASE_URL = import.meta.env.VITE_FINEX_API_URL ?? "";
+const DEFAULT_PROD_API_URL = "https://finex-public.onrender.com";
+
+function resolveApiBaseUrl(): string {
+  const configured = import.meta.env.VITE_FINEX_API_URL?.trim();
+  const baseUrl = configured || (import.meta.env.PROD ? DEFAULT_PROD_API_URL : "");
+  return baseUrl.replace(/\/+$/, "");
+}
+
+const API_BASE_URL = resolveApiBaseUrl();
 
 let _activeSession: string = (() => {
   try {
